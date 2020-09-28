@@ -1,0 +1,355 @@
+object Form1: TForm1
+  Left = 216
+  Top = 210
+  Width = 870
+  Height = 640
+  Caption = #1048#1089#1089#1083#1077#1076#1086#1074#1072#1085#1080#1077' '#1075#1088#1072#1092#1080#1082#1086#1074
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 56
+    Width = 125
+    Height = 26
+    Caption = 'y=AX^2+BX+C'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clRed
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 176
+    Top = 32
+    Width = 13
+    Height = 26
+    Caption = 'A'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 240
+    Top = 32
+    Width = 12
+    Height = 26
+    Caption = 'B'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 296
+    Top = 32
+    Width = 11
+    Height = 26
+    Caption = 'C'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 344
+    Top = 32
+    Width = 57
+    Height = 26
+    Caption = 'X_Min'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 424
+    Top = 32
+    Width = 64
+    Height = 26
+    Caption = 'X_Max'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 32
+    Top = 192
+    Width = 163
+    Height = 26
+    Caption = '(x-a)^2+(y-b)^2=R'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clRed
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 240
+    Top = 168
+    Width = 10
+    Height = 26
+    Caption = 'a'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 296
+    Top = 168
+    Width = 11
+    Height = 26
+    Caption = 'b'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 352
+    Top = 168
+    Width = 12
+    Height = 26
+    Caption = 'R'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object A: TEdit
+    Left = 168
+    Top = 64
+    Width = 41
+    Height = 21
+    TabOrder = 0
+    Text = '3'
+  end
+  object B: TEdit
+    Left = 224
+    Top = 64
+    Width = 41
+    Height = 21
+    TabOrder = 1
+    Text = '2'
+  end
+  object C: TEdit
+    Left = 280
+    Top = 64
+    Width = 41
+    Height = 21
+    TabOrder = 2
+    Text = '1'
+  end
+  object X_Min: TEdit
+    Left = 352
+    Top = 64
+    Width = 41
+    Height = 21
+    TabOrder = 3
+    Text = '-10'
+  end
+  object X_Max: TEdit
+    Left = 432
+    Top = 64
+    Width = 41
+    Height = 21
+    TabOrder = 4
+    Text = '10'
+  end
+  object Parabola: TBitBtn
+    Left = 24
+    Top = 96
+    Width = 145
+    Height = 33
+    Caption = #1055#1072#1088#1072#1073#1086#1083#1072
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    OnClick = ParabolaClick
+  end
+  object Parabola_Tab_Pok: TBitBtn
+    Left = 24
+    Top = 144
+    Width = 145
+    Height = 33
+    Caption = #1055#1086#1082#1072#1079'.'#1090#1072#1073#1083'.'#1087#1072#1088#1072#1073'.'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    OnClick = Parabola_Tab_PokClick
+  end
+  object AA: TEdit
+    Left = 224
+    Top = 200
+    Width = 41
+    Height = 21
+    TabOrder = 7
+    Text = '3'
+  end
+  object BB: TEdit
+    Left = 280
+    Top = 200
+    Width = 41
+    Height = 21
+    TabOrder = 8
+    Text = '2'
+  end
+  object R: TEdit
+    Left = 336
+    Top = 200
+    Width = 41
+    Height = 21
+    TabOrder = 9
+    Text = '5'
+  end
+  object Okrygnost: TBitBtn
+    Left = 32
+    Top = 232
+    Width = 137
+    Height = 33
+    Caption = #1054#1082#1088#1091#1078#1085#1086#1089#1090#1100
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+    OnClick = OkrygnostClick
+  end
+  object Okr_Tab_Pok: TBitBtn
+    Left = 32
+    Top = 288
+    Width = 137
+    Height = 33
+    Caption = #1055#1086#1082#1072#1079'.'#1090#1072#1073#1083'.'#1086#1082#1088#1091#1078#1085'.'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    OnClick = Okr_Tab_PokClick
+  end
+  object Chart1: TChart
+    Left = 32
+    Top = 344
+    Width = 209
+    Height = 201
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Text.Strings = (
+      #1055#1072#1088#1072#1073#1086#1083#1072)
+    Legend.Visible = False
+    View3D = False
+    TabOrder = 12
+    object Series1: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clRed
+      LinePen.Width = 3
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1
+      YValues.Order = loNone
+    end
+  end
+  object Chart2: TChart
+    Left = 272
+    Top = 344
+    Width = 193
+    Height = 201
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Brush.Color = 8421631
+    Title.Color = 8421631
+    Title.Frame.Color = clRed
+    Title.Text.Strings = (
+      #1054#1082#1088#1091#1078#1085#1086#1089#1090#1100)
+    Legend.Visible = False
+    ScaleLastPage = False
+    View3D = False
+    TabOrder = 13
+    object Series2: TPointSeries
+      Marks.ArrowLength = 0
+      Marks.Visible = False
+      SeriesColor = clRed
+      Pointer.Brush.Color = clRed
+      Pointer.InflateMargins = True
+      Pointer.Style = psCircle
+      Pointer.Visible = True
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1
+      YValues.Order = loNone
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 64
+    Top = 344
+    Width = 137
+    Height = 201
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 2
+    TabOrder = 14
+  end
+  object StringGrid2: TStringGrid
+    Left = 312
+    Top = 344
+    Width = 137
+    Height = 201
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 2
+    TabOrder = 15
+  end
+end
