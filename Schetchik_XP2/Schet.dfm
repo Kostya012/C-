@@ -1,0 +1,232 @@
+object Form1: TForm1
+  Left = 216
+  Top = 121
+  Width = 529
+  Height = 417
+  Caption = #1057#1095#1105#1090#1095#1080#1082#8482
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 160
+    Top = 8
+    Width = 200
+    Height = 31
+    Caption = #1058#1080#1087#1086#1075#1088#1072#1092#1080#1103' '#8470'18'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clNavy
+    Font.Height = -27
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Top = 56
+    Width = 190
+    Height = 26
+    Caption = #1055#1077#1088#1074#1086#1077' '#1095#1080#1089#1083#1086' '#1089#1095#1105#1090#1072':'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Top = 96
+    Width = 169
+    Height = 26
+    Caption = #1055#1086#1089#1083#1077#1076#1085#1077#1077' '#1095#1080#1089#1083#1086':'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 80
+    Top = 136
+    Width = 121
+    Height = 26
+    Caption = #1054#1090#1089#1090#1091#1087' '#1074' '#1084#1084':'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Top = 168
+    Width = 155
+    Height = 26
+    Caption = #1055#1086' '#1075#1086#1088#1080#1079#1086#1085#1090#1072#1083#1080':'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 192
+    Top = 168
+    Width = 134
+    Height = 26
+    Caption = #1055#1086' '#1074#1077#1088#1090#1080#1082#1072#1083#1080':'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 16
+    Top = 240
+    Width = 145
+    Height = 26
+    Caption = #1056#1072#1079#1084#1077#1088' '#1096#1088#1080#1092#1090#1072':'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -19
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Nach: TEdit
+    Left = 208
+    Top = 56
+    Width = 113
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    Text = '1'
+    OnChange = NachChange
+  end
+  object Konec: TEdit
+    Left = 208
+    Top = 96
+    Width = 113
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    Text = '3'
+    OnChange = KonecChange
+  end
+  object Goriz: TEdit
+    Left = 48
+    Top = 200
+    Width = 89
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    Text = '30'
+    OnChange = GorizChange
+  end
+  object Vert: TEdit
+    Left = 216
+    Top = 200
+    Width = 89
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    Text = '60'
+    OnChange = VertChange
+  end
+  object Pysk: TBitBtn
+    Left = 16
+    Top = 304
+    Width = 105
+    Height = 57
+    Caption = #1055#1077#1095#1072#1090#1100
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    OnClick = PyskClick
+  end
+  object Vuxod: TBitBtn
+    Left = 368
+    Top = 304
+    Width = 105
+    Height = 57
+    Caption = #1042#1099#1093#1086#1076
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Comic Sans MS'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    OnClick = VuxodClick
+  end
+  object Razmer: TEdit
+    Left = 168
+    Top = 240
+    Width = 89
+    Height = 26
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    Text = '14'
+    OnChange = RazmerChange
+  end
+  object Memo1: TMemo
+    Left = 344
+    Top = 64
+    Width = 153
+    Height = 193
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    Lines.Strings = (
+      ''
+      '      '#1060#1086#1088#1084#1072#1090
+      ''
+      '          '#1040'4'
+      ''
+      '      297*210')
+    ParentFont = False
+    TabOrder = 7
+  end
+end
